@@ -16,8 +16,9 @@
 # repository as source. Here we use the 'docker' image to build the image and
 # tag it with the name of the image.
 steps:
-- name: 'docker'
-  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/helloworld-image', '.' ]
+# Load Test
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['run', '-i', 'grafana/k6', 'run', '-', '<tests/test.js']
 
 # By default, all built docker images will be lost once the build is complete.
 # Rather than writing a build step to push this image, you can simply list the
