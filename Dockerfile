@@ -12,6 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM alpine
-COPY helloworld.sh /
-CMD ["/helloworld.sh"]
+# FROM alpine
+# COPY helloworld.sh /
+# CMD ["/helloworld.sh"]
+
+# Use a imagem do k6 como base
+FROM grafana/k6:latest
+
+# Copie o script de teste para o diretório /scripts dentro do contêiner
+COPY test.js /scripts/
+
+# Defina o diretório de trabalho como /scripts
+WORKDIR /scripts
+
+# Comando padrão a ser executado quando o contêiner for iniciado
+CMD ["k6", "run", "test.js"]
