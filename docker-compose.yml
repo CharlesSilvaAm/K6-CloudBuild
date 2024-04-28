@@ -2,8 +2,8 @@ version: '3.4'
 services:
   k6:
     image: grafana/k6:latest
-    command: cloud /scripts/test.js
+    command: cloud tests\test.js
     volumes:
-      - ./scripts:/scripts
+      - .tests\test.js
     environment:
       - K6_CLOUD_TOKEN=${K6_CLOUD_TOKEN}
