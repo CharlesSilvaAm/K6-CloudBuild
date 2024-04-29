@@ -15,21 +15,23 @@ Grafana
 Cloud Build (Google Cloud) 
 
 # Estrutura de arquivos
-📦Cloud-Console-Sample-Build
-┣ 📂img
-┃ ┗ 📜results.png
-┣ 📂scripts
-┃ ┣ 📂tests
-┃ ┃ ┣ 📜signup-list.js
-┃ ┃ ┣ 📜signup-load.js
-┃ ┃ ┗ 📜signup-smoke.js
-┃ ┃ ┣ 📜signup-stress.js
-┃ ┃ ┗ 📜test.js
-┣ 📜.gitignore
-┣ 📜cloudbuild.yaml
-┣ 📜docker-compose.yml
-┣ 📜Dockerfile
-┣ 📜README.md
+
+
+    📦Cloud-Console-Sample-Build
+    ┣ 📂img
+    ┃ ┗ 📜results.png
+    ┣ 📂scripts
+    ┃ ┣ 📂tests
+    ┃ ┃ ┣ 📜signup-list.js
+    ┃ ┃ ┣ 📜signup-load.js
+    ┃ ┃ ┗ 📜signup-smoke.js
+    ┃ ┃ ┣ 📜signup-stress.js
+    ┃ ┃ ┗ 📜test.js
+    ┣ 📜.gitignore
+    ┣ 📜cloudbuild.yaml
+    ┣ 📜docker-compose.yml
+    ┣ 📜Dockerfile
+    ┣ 📜README.md
 
 # Exemplos de execução
 ```bash
